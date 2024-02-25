@@ -23,7 +23,7 @@ import java.util.List;
  */
 public abstract class AircraftEntity extends InventoryVehicleEntity {
     private final AircraftProperties properties;
-    private float lastY;
+    protected float lastY;
 
     public AircraftEntity(EntityType<? extends AircraftEntity> entityType, Level world, boolean canExplodeOnCrash) {
         super(entityType, world, canExplodeOnCrash);
