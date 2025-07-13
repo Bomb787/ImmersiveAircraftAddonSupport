@@ -1,10 +1,20 @@
-# 1.2.3
+# 1.3.2
 
+* Fixed aircraft sinking on Forge
+
+# 1.3.1
+
+* Fixed recipe
+
+# 1.3.0
+
+* Added the Bamboo Hopper
+* Made trails data driven
 * Fixed a crash
 
 # 1.2.2
 
-* Updated API related stuff
+* Updated API-related stuff
 
 # 1.2.1
 

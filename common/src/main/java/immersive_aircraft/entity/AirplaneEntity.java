@@ -93,7 +93,7 @@ public abstract class AirplaneEntity extends AircraftEntity {
             }
         }
 
-        // get direction
+        // get the direction
         Vector3f direction = getForwardDirection();
 
         /*double a = -this.getXRot();
