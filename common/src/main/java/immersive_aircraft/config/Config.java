@@ -84,6 +84,9 @@ public final class Config extends JsonConfig {
     @BooleanConfigEntry(true)
     public boolean collisionDamage;
 
+    @FloatConfigEntry(40.0f)
+    public float collisionDamageMultiplier;
+
     @BooleanConfigEntry(false)
     public boolean burnFuelInCreative;
 
@@ -100,6 +103,9 @@ public final class Config extends JsonConfig {
     public boolean weaponsAreDestructive;
 
     @BooleanConfigEntry(true)
+    public boolean dropAircraft;
+
+    @BooleanConfigEntry(true)
     public boolean dropInventory;
 
     @BooleanConfigEntry(false)
@@ -110,6 +116,19 @@ public final class Config extends JsonConfig {
 
     @BooleanConfigEntry(false)
     public boolean requireShiftForRepair;
+
+    // The entity to spawn when triggering the bomb bay
+    // The item also needs to be valid ammunition (e.g., set to 100)
+    public Map<String, String> bombBayEntity = Map.of(
+            "minecraft:egg", "minecraft:chicken"
+    );
+
+    @FloatConfigEntry(5.0f)
+    public float rotaryCannonDamage;
+
+    // The velocity also determines the arrow's damage
+    @FloatConfigEntry(3.0f)
+    public float heavyCrossBowVelocity;
 
     public Map<String, Integer> fuelList = Map.of(
             "minecraft:blaze_powder", 1200
